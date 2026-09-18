@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Legacy English Space — Primary Tutoring</title>
+  <meta
+    name="description"
+    content="Legacy English Space menyediakan tutoring untuk siswa SD/Primary 1 hingga Primary 6 dengan Cambridge dan Singaporean Curriculum-Based Learning."
+  />
+  <meta
+    name="keywords"
+    content="Primary (SD) Tutoring, Legacy English Space"
+  />
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://lespace.web.id/">
+
+    <meta property="og:title" content="Legacy English Space — Primary Tutoring">
+    <meta property="og:description" content="Legacy English Space menyediakan tutoring untuk siswa SD/Primary 1 hingga Primary 6 dengan Cambridge dan Singaporean Curriculum-Based Learning.">
+    <meta property="og:url" content="https://lespace.web.id/">
+    <meta property="og:type" content="website">
+</head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --navy: #102a56;
+      --navy-dark: #081b3a;
+      --blue: #2f80ed;
+      --blue-light: #eaf4ff;
+      --yellow: #ffc94a;
+      --white: #ffffff;
+      --text: #26364d;
+      --muted: #6f7d91;
+      --border: #e5ebf3;
+      --background: #f8fbff;
+      --shadow: 0 16px 45px rgba(16, 42, 86, 0.1);
+      --radius: 18px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    button,
+    .logo {
+      font-family: "Poppins", sans-serif;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      width: min(1140px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    .section {
+      padding: 90px 0;
+    }
+
+    .section-heading {
+      max-width: 650px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--blue);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 26px;
+      height: 3px;
+      border-radius: 10px;
+      background: var(--yellow);
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: var(--navy);
+      line-height: 1.2;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 5vw, 4.3rem);
+      margin-bottom: 22px;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+    }
+
+    p {
+      color: var(--muted);
+    }
+
+    .btn {
+      border: none;
+      border-radius: 10px;
+      padding: 14px 21px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      color: var(--white);
+      background: var(--blue);
+      box-shadow: 0 8px 20px rgba(47, 128, 237, 0.23);
+    }
+
+    .btn-primary:hover {
+      background: var(--navy);
+      transform: translateY(-3px);
+    }
+
+    .btn-outline {
+      color: var(--navy);
+      border: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+      transform: translateY(-3px);
+    }
+
+    .btn-yellow {
+      background: var(--yellow);
+      color: var(--navy-dark);
+    }
+
+    .btn-yellow:hover {
+      background: #ffd970;
+      transform: translateY(-3px);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(229, 235, 243, 0.8);
+    }
+
+    .navbar {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: var(--navy);
+      font-size: 1.45rem;
+      font-weight: 800;
+    }
+
+    .logo-mark {
+      width: 64px;
+      height: 64px;
+      flex: 0 0 64px;
+      display: block;
+      object-fit: contain;
+      aspect-ratio: 1 / 1;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.92rem;
+      font-weight: 600;
+    }
+
+    .nav-links a {
+      transition: 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--blue);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: none;
+      background: transparent;
+      color: var(--navy);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* Hero */
+    .hero {
+      overflow: hidden;
+      padding: 88px 0 70px;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(47, 128, 237, 0.12), transparent 30%),
+        linear-gradient(180deg, #f8fbff, #fff);
+    }
+
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.hero-copy {
+  width: 100%;
+  text-align: left;
+}
+
+.hero-copy h1 {
+  max-width: 850px;
+  text-align: left;
+}
+
+.hero-copy p {
+  width: 100%;
+  max-width: 700px;
+  font-size: 1.05rem;
+  margin-bottom: 29px;
+  text-align: left;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--navy);
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      position: relative;
+      overflow: hidden;
+      padding: 24px;
+      min-height: 450px;
+      border-radius: 30px;
+      color: var(--white);
+      background: linear-gradient(145deg, var(--navy), #1e5ca9);
+      box-shadow: var(--shadow);
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 270px;
+      height: 270px;
+      right: -85px;
+      bottom: -100px;
+      border-radius: 50%;
+      background: rgba(255, 201, 74, 0.28);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .card-label {
+      color: #bfddff;
+      font-size: 0.85rem;
+    }
+
+    .card-icon {
+      width: 45px;
+      height: 45px;
+      display: grid;
+      place-items: center;
+      border-radius: 13px;
+      color: var(--navy);
+      background: var(--yellow);
+      font-size: 1.25rem;
+    }
+
+    .hero-card h3 {
+      max-width: 300px;
+      color: var(--white);
+      font-size: 1.75rem;
+      margin-bottom: 12px;
+    }
+
+    .hero-card p {
+      max-width: 310px;
+      color: #d6e6fa;
+    }
+
+    .floating-card {
+      position: absolute;
+      right: -28px;
+      bottom: 35px;
+      z-index: 2;
+      width: 220px;
+      padding: 18px;
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .floating-card strong {
+      display: block;
+      color: var(--navy);
+      margin-bottom: 5px;
+    }
+
+    .floating-card span {
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+
+    /* About */
+    .about {
+      background: var(--background);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .about-image {
+      min-height: 390px;
+      display: flex;
+      align-items: flex-end;
+      padding: 25px;
+      border-radius: 25px;
+      background:
+        linear-gradient(145deg, rgba(16, 42, 86, 0.72), rgba(47, 128, 237, 0.35)),
+        url("https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80")
+        center/cover;
+    }
+
+    .experience-box {
+      padding: 18px;
+      border-radius: 15px;
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .experience-box strong {
+      display: block;
+      color: var(--blue);
+      font-size: 1.8rem;
+    }
+
+    .check-list {
+      display: grid;
+      gap: 17px;
+      margin-top: 25px;
+      list-style: none;
+    }
+
+    .check-list li {
+      display: flex;
+      gap: 11px;
+      align-items: flex-start;
+    }
+
+    .check-list span {
+      flex: 0 0 25px;
+      width: 25px;
+      height: 25px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--blue);
+      background: var(--blue-light);
+      font-weight: 800;
+    }
+
+    /* Programs */
+    .programs {
+      background: var(--white);
+    }
+
+    .program-grid,
+    .level-grid,
+    .subject-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .program-card,
+    .level-card,
+    .subject-card,
+    .price-card,
+    .schedule-card,
+    .form-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      transition: 0.3s ease;
+    }
+
+    .program-card {
+      padding: 25px;
+    }
+
+    .program-card:hover,
+    .teacher-card:hover,
+    .subject-card:hover {
+      transform: translateY(-7px);
+      box-shadow: var(--shadow);
+    }
+
+    .program-icon {
+      width: 54px;
+      height: 54px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      color: var(--blue);
+      background: var(--blue-light);
+      font-size: 1.5rem;
+    }
+
+    .program-card p {
+      margin: 10px 0 18px;
+      font-size: 0.92rem;
+    }
+
+    .program-card a {
+      color: var(--blue);
+      font-size: 0.9rem;
+      font-weight: 700;
+    }
+
+    /* Pricing */
+    .pricing {
+      background: var(--white);
+    }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .price-card {
+      position: relative;
+      padding: 28px;
+    }
+
+    .price-card.featured {
+      border: 2px solid var(--blue);
+      transform: translateY(-10px);
+    }
+
+    .popular {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      padding: 5px 10px;
+      border-radius: 30px;
+      color: var(--navy);
+      background: var(--yellow);
+      font-size: 0.72rem;
+      font-weight: 800;
+    }
+
+    .price-card h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: var(--navy);
+      font-family: "Poppins", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin: 18px 0;
+    }
+
+    .price small {
+      color: var(--muted);
+      font-family: "Inter", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+    }
+
+    .price-features {
+      display: grid;
+      gap: 12px;
+      margin-bottom: 25px;
+      list-style: none;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .price-features li::before {
+      content: "✓";
+      color: var(--blue);
+      font-weight: 800;
+      margin-right: 8px;
+    }
+
+  /* Subject */
+.subject {
+  padding: 90px 0;
+  background: var(--background);
+}
+
+/* SUBJECT GRID */
+
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+
+/* SUBJECT ITEM */
+
+.subject-item {
+  position: relative;
+
+  height: 260px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-radius: 26px;
+
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.subject-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.14);
+}
+
+
+/* SUBJECT NAME */
+
+.subject-name {
+  position: relative;
+  z-index: 2;
+
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  color: #ffffff;
+}
+
+
+/* SYMBOL */
+
+.subject-symbol {
+  position: absolute;
+  z-index: 1;
+
+  right: 24px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  font-size: 100px;
+  line-height: 1;
+
+  font-weight: 700;
+
+  color: rgba(255, 255, 255, 0.18);
+
+  transition:
+    transform 0.35s ease,
+    color 0.35s ease;
+}
+
+.subject-item:hover .subject-symbol {
+  transform: translateY(-50%) scale(1.08) rotate(-5deg);
+  color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* MATHEMATICS */
+
+.subject-math {
+  background: #df5757;
+}
+
+
+/* SCIENCE */
+
+.subject-science {
+  background: #43a86f;
+}
+
+
+/* ENGLISH */
+
+.subject-english {
+  background: #397fd1;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .subjects {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-item {
+    height: 210px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .subject {
+    padding: 65px 0;
+  }
+
+  .subjects {
+    gap: 16px;
+    margin-top: 35px;
+  }
+
+  .subject-item {
+    height: 180px;
+    padding: 25px;
+    border-radius: 20px;
+  }
+
+  .subject-name {
+    font-size: 25px;
+  }
+
+  .subject-symbol {
+    font-size: 80px;
+  }
+}
+/* Grade */
+.grade {
+  background: var(--white);
+}
+
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.grade-card {
+  position: relative;
+  height: 220px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 24px;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(16, 42, 86, 0.06);
+  transition: 0.35s ease;
+}
+
+.grade-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(16, 42, 86, 0.14);
+}
+
+.grade-card::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  right: -55px;
+  bottom: -60px;
+  border-radius: 50%;
+  background: var(--blue-light);
+}
+
+.grade-label {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.grade-card h3 {
+  position: relative;
+  z-index: 2;
+  color: var(--navy);
+  font-size: 3rem;
+  line-height: 1;
+}
+
+    /* Schedule */
+    .schedule {
+      background: var(--background);
+    }
+
+    .schedule-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .schedule-card {
+      padding: 27px;
+    }
+
+    .schedule-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 15px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+    }
+
+    .schedule-row:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-row strong {
+      color: var(--navy);
+    }
+
+    /* Form */
+    .register {
+      background: var(--navy);
+    }
+
+    .register .section-heading h2,
+    .register .section-heading p {
+      color: var(--white);
+    }
+
+    .register .section-heading p {
+      color: #c8d7eb;
+    }
+
+    .register-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 45px;
+      align-items: start;
+    }
+
+    .benefit-list {
+      display: grid;
+      gap: 17px;
+      margin-top: 27px;
+      list-style: none;
+    }
+
+    .benefit-list li {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      color: #d9e7f8;
+    }
+
+    .benefit-list span {
+      color: var(--yellow);
+      font-size: 1.2rem;
+    }
+
+    .form-card {
+      padding: 27px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      display: grid;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: var(--navy);
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      outline: none;
+      color: var(--text);
+      background: var(--white);
+      font: inherit;
+      transition: 0.2s ease;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(47, 128, 237, 0.12);
+    }
+
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    .error {
+      display: none;
+      color: #d83a3a;
+      font-size: 0.75rem;
+    }
+
+    .form-group.invalid input,
+    .form-group.invalid select,
+    .form-group.invalid textarea {
+      border-color: #d83a3a;
+    }
+
+    .form-group.invalid .error {
+      display: block;
+    }
+
+    .form-message {
+      display: none;
+      margin-top: 14px;
+      padding: 12px;
+      border-radius: 8px;
+      color: #17633c;
+      background: #e6f7ed;
+      font-size: 0.85rem;
+    }
+
+    /* Footer */
+    footer {
+      padding: 27px 0;
+      color: #d0dced;
+      background: var(--navy-dark);
+    }
+
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    footer .logo {
+      color: var(--white);
+    }
+
+    footer p {
+      color: #9fb0c9;
+      font-size: 0.85rem;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      color: #d0dced;
+      font-size: 0.9rem;
+    }
+
+    /* WhatsApp */
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 99;
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--white);
+      background: #25d366;
+      box-shadow: 0 9px 25px rgba(37, 211, 102, 0.35);
+      font-size: 1.6rem;
+      transition: 0.3s ease;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .grade-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+   .grade-card {
+     padding: 25px;
+     border: 1px solid var(--border);
+     border-radius: var(--radius);
+     background: var(--white);
+     text-align: center;
+    transition: 0.3s ease;
+    }
+
+   .grade-card:hover {
+     transform: translateY(-5px);
+     box-shadow: var(--shadow);
+    }
+
+   .grade-icon {
+     font-size: 2rem;
+     margin-bottom: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        position: absolute;
+        top: 76px;
+        left: 20px;
+        right: 20px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        border-radius: 15px;
+        background: var(--white);
+        box-shadow: var(--shadow);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-actions .btn {
+        display: none;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .register-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+      }
+
+      .level-grid,
+      .program-grid,
+      .subject-grid,
+      .price-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .schedule-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: min(100% - 28px, 1140px);
+      }
+
+      .section {
+        padding: 65px 0;
+      }
+
+      .hero {
+        padding-top: 60px;
+      }
+
+      .hero-buttons,
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .hero-stats {
+        justify-content: space-between;
+        gap: 12px;
+      }
+
+      .level-grid,
+      .subject-grid,
+      .program-grid,
+      .price-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .price-card.featured {
+        transform: none;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .floating-card {
+        right: 12px;
+      }
+
+      .footer-content {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a href="#beranda" class="logo">
+        <img class="logo-mark"
+<img src="https://iili.io/nd3IeoJ.th.png" alt="Logo">
+        Legacy English Space
+      </a>
+
+      <button class="menu-toggle" aria-label="Buka menu navigasi">
+        ☰
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#keunggulan">Keunggulan</a></li>
+        <li><a href="#grade">Level</a></li>
+        <li><a href="#subject">Subjects</a></li>
+        <li><a href="#harga">Program</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#daftar" class="btn btn-primary">Daftar Sekarang</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Belajar Lebih Cerdas</span>
+          <h1>Wujudkan Prestasi Terbaik Bersama Legacy English Space</h1>
+          <p>
+            Primary tutoring offline dan online terpercaya dengan metode interaktif, pengajar
+            berpengalaman, dan program belajar yang dirancang sesuai kebutuhan
+            setiap siswa.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#daftar" class="btn btn-primary">Daftar Sekarang →</a>
+            <a href="#program" class="btn btn-outline">Lihat Program</a>
+ 	 </div>
+  	</div>
+       </section>
+
+    <section class="section about" id="keunggulan">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <div class="experience-box">
+            <strong>Legacy English Space</strong>
+            <span>mendampingi generasi berprestasi</span>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="section-heading">
+            <span class="eyebrow">Keunggulan Legacy English Space</span>
+            <h2>Partner belajar yang memahami kebutuhan siswa</h2>
+            <p>
+              Legacy English Space hadir untuk menciptakan pengalaman belajar yang
+              terarah, personal, dan relevan. Kami percaya setiap siswa
+              memiliki potensi unik yang dapat dikembangkan.
+            </p>
+          </div>
+
+          <ul class="check-list">
+            <li>
+              <span>✓</span>
+              <div>
+                <h3>Cambridge Curriculum-Based Learning</h3>
+                <p>LES mendukung siswa memahami materi dan memenuhi kebutuhan pembelajaran berbasis Cambridge Curriculum secara sistematis.</p>
+	      </div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div>
+                <h3>Singaporean Curriculum-Based Learning</h3>
+                <p>Di LES, siswa dibantu dalam menguasai materi dan mengikuti tuntutan pembelajaran berbasis Singaporean Curriculum secara efektif.</p>
+              </div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div>
+                <h3>Full English Lessons</h3>
+                <p>Bahasa Inggris menjadi bahasa utama dalam pembelajaran di LES agar siswa terbiasa mendengar, memahami, dan berkomunikasi dalam Bahasa Inggris secara natural dan percaya diri.</p>
+              </div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div>
+                <h3>Jadwal belajar fleksibel</h3>
+		<p>Atur waktu belajar yang paling sesuai dengan kesibukan dan kebutuhan setiap siswa. </p>
+              </div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div>
+                <h3>Tersedia kelas offline dan online</h3>
+		<p>LES menyediakan kelas offline dan online sesuai kebutuhan belajar siswa.</p>
+              </div>
+            </li>
+            <li>
+              <span>✓</span>
+              <div>
+		<h3>Evaluasi Berkala</h3>
+                <p>Perkembangan siswa dapat dipantau melalui konsultasi rutin.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+<section class="section grade" id="grade">
+  <div class="container">
+    <div class="section-heading center reveal">
+      <span class="eyebrow">Primary Level</span>
+      <h2>Setiap tingkatan punya tantangan belajar</h2>
+      <p>
+        Pendampingan belajar yang membantu Anda berkembang di setiap tingkat Primary.
+      </p>
+    </div>
+
+    <div class="grade-grid">
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>1</h3>
+        </div>
+      </div>
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>2</h3>
+        </div>
+      </div>
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>3</h3>
+        </div>
+      </div>
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>4</h3>
+        </div>
+      </div>
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>5</h3>
+        </div>
+      </div>
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label">PRIMARY</span>
+          <h3>6</h3>
+        </div>
+      </div>
+</section>
+
+<section class="section subject" id="subject">
+  <div class="container">
+    <div class="section-heading center reveal">
+      <span class="eyebrow">Mata Pelajaran</span>
+      <h2>Subjects yang tersedia</h2>
+      <p>
+        Mata pelajaran utama untuk mendukung pembelajaran siswa Primary (SD).
+      </p>
+    </div>
+
+   <div class="subjects">
+
+      <a href="#" class="subject-item subject-math reveal">
+        <div class="subject-name">Mathematics</div>
+        <div class="subject-symbol">+</div>
+      </a>
+
+      <a href="#" class="subject-item subject-science reveal">
+        <div class="subject-name">Science</div>
+        <div class="subject-symbol">✦</div>
+      </a>
+
+      <a href="#" class="subject-item subject-english reveal">
+        <div class="subject-name">English</div>
+        <div class="subject-symbol">abc</div>
+      </a>
+
+    </div>
+  </div>
+</section>
+    <section class="section pricing" id="harga">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Program Belajar</span>
+          <h2>Investasi pendidikan yang fleksibel</h2>
+          <p>
+            Pilih paket yang sesuai. Harga dapat disesuaikan berdasarkan program,
+            durasi, dan jumlah pertemuan.
+          </p>
+        </div>
+
+        <div class="price-grid">
+          <article class="price-card reveal">
+            <h3>PRIVATE HOME VISIT</h3>
+            <p>Tutor LES datang ke lokasi siswa.</p>
+            <div class="price">Hubungi kami</div>
+            <ul class="price-features">
+              <li>1 Siswa 1 Tutor</li>
+              <li>Materi sesuai dengan kebutuhan siswa</li>
+	      <li>Jadwal belajar lebih fleksibel</li>
+              <li>Progress belajar dipantau secara berkala</li>
+            </ul>
+            <a href="#daftar" class="btn btn-outline">Tanya Harga</a>
+          </article>
+
+          <article class="price-card featured reveal">
+            <span class="popular">Paling diminati</span>
+            <h3>PRIVATE ON-SITE</h3>
+            <p>Belajar private langsung di lokasi LES.</p>
+            <div class="price">Hubungi kami</div>
+            <ul class="price-features">
+              <li>1 Siswa 1 Tutor</li>
+	      <li>Materi sesuai dengan kebutuhan siswa</li>
+	      <li>Pembelajaran fokus & personal</li>
+              <li>Evaluasi perkembangan belajar</li>
+            </ul>
+            <a href="#daftar" class="btn btn-primary">Tanya Harga</a>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>PRIVATE ONLINE</h3>
+            <p>Belajar private secara online dari mana saja.</p>
+            <div class="price">Hubungi kami</div>
+            <ul class="price-features">
+              <li>1 Siswa 1 Tutor</li>
+              <li>Materi sesuai dengan kebutuhan siswa</li>
+	      <li>Pembelajaran melalui zoom/google meet</li>
+	      <li>Modul atau materi pembelajaran digital</li>
+              <li>Monitoring progress belajar</li>
+            </ul>
+            <a href="#daftar" class="btn btn-outline">Tanya Harga</a>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>PAIR ON-SITE</h3>
+            <p>Belajar bersama teman atau saudara.</p>
+            <div class="price">Hubungi kami</div>
+            <ul class="price-features">
+              <li>2 Siswa 1 Tutor</li>
+	      <li>Suasana lebih interaktif tapi tetap terarah</li>
+              <li>Materi sesuai kebutuhan kedua siswa</li>
+              <li>Cocok untuk siswa dengan level belajar yang setara</li>
+            </ul>
+            <a href="#daftar" class="btn btn-outline">Tanya Harga</a>
+          </article>
+
+          <article class="price-card reveal">
+            <h3>GROUP ON-SITE</h3>
+            <p>Belajar dalam kelompok kecil.</p>
+            <div class="price">Hubungi kami</div>
+            <ul class="price-features">
+              <li>3 Siswa 1 Tutor</li>
+	      <li>Aktivitas belajar interaktif dan kolaboratif</li>
+              <li>Diskusi dan latihan bersama</li>
+              <li>Materi sesuai level dan kebutuhan kelompok</li>
+            </ul>
+            <a href="#daftar" class="btn btn-outline">Tanya Harga</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section schedule" id="lokasi">
+      <div class="container">
+        <div class="section-heading center reveal">
+          <span class="eyebrow">Jadwal & Lokasi</span>
+          <h2>Belajar sesuai ritme Anda</h2>
+          <p>
+            Pilih waktu belajar yang paling sesuai dengan jadwal Anda.
+          </p>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-card reveal">
+            <h3>Jam Operasional</h3>
+            <div class="schedule-row">
+              <strong>Senin–Minggu</strong>
+              <span>By appointment</span>
+            </div>
+            <div class="schedule-row">
+              <strong>Setiap Hari</strong>
+              <span>Jadwal tersedia sesuai kesepakatan</span>
+            </div>
+          </div>
+
+          <div class="schedule-card reveal">
+            <h3>Lokasi Legacy English Space</h3>
+            <p>
+              Jl. Kulintang Raya No.9, Mataram Tim., Kec. Mataram, Kota Mataram, Nusa Tenggara Bar. 83127<br />
+            </p>
+            <br />
+            <a
+              class="btn btn-outline"
+              href="https://maps.app.goo.gl/WRk5gxwswvxhb3Yv9"
+              target="_blank"
+              rel="noopener"
+            >
+              Buka Google Maps
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section register" id="daftar">
+      <div class="container register-grid">
+        <div class="reveal">
+          <div class="section-heading">
+            <span class="eyebrow">Pendaftaran</span>
+            <h2>Mulai perjalanan belajar bersama Legacy English Space</h2>
+            <p>
+              Isi formulir berikut. Tim kami akan menghubungi Anda untuk
+              memberikan rekomendasi program dan informasi harga.
+            </p>
+          </div>
+
+          <ul class="benefit-list">
+            <li><span>✓</span> Konsultasi program gratis</li>
+            <li><span>✓</span> Rekomendasi kelas sesuai kebutuhan</li>
+            <li><span>✓</span> Jadwal belajar fleksibel</li>
+            <li><span>✓</span> Pengajar profesional dan ramah</li>
+          </ul>
+        </div>
+
+        <div class="form-card reveal">
+          <form id="registrationForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="name">Nama lengkap</label>
+                <input id="name" name="name" type="text" placeholder="Nama Anda" />
+                <span class="error">Nama wajib diisi.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Nomor WhatsApp</label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="08xxxxxxxxxx"
+                />
+                <span class="error">Nomor WhatsApp wajib diisi.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="level">Primary Level</label>
+                <select id="level" name="level">
+                  <option value="">Pilih tingkat Primary</option>
+                  <option>Primary 1</option>
+                  <option>Primary 2</option>
+                  <option>Primary 3</option>
+                  <option>Primary 4</option>
+		  <option>Primary 5</option>
+		  <option>Primary 6</option>
+
+                </select>
+                <span class="error">Pilih kelas Primary.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="programSelect">Program pilihan</label>
+                <select id="programSelect" name="program">
+                  <option value="">Pilih program</option>
+                  <option>Private Home Visit</option>
+                  <option>Private On-Site</option>
+                  <option>Private Online</option>
+                  <option>Pair On-Site</option>
+                  <option>Group On-Site</option>
+             
+                </select>
+                <span class="error">Pilih program belajar.</span>
+              </div>
+
+              <div class="form-group full">
+                <label for="message">Pesan tambahan</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Tuliskan mata pelajaran atau kebutuhan belajar Anda"
+                ></textarea>
+              </div>
+            </div>
+
+            <button class="btn btn-primary" type="submit">
+              Kirim Pendaftaran
+            </button>
+
+            <div class="form-message" id="formMessage">
+              Pendaftaran berhasil dikirim. Tim Legacy English Space akan segera menghubungi Anda.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="kontak">
+    <div class="container footer-content">
+      <a href="#beranda" class="logo">
+       <img class="logo-mark"
+<img src="https://iili.io/nd3IeoJ.th.png" alt="Logo">
+        Legacy English Space
+      </a>
+
+      <p>© 2026 Legacy English Space. Semua hak dilindungi.</p>
+
+      <div class="social-links">
+        <a href="#" aria-label="Email">legacyenglishspace@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/6287791155447?text=Halo%20Legacy English Space,%20saya%20ingin%20mendapatkan%20informasi%20program%20belajar."
+    target="_blank"
+    rel="noopener"
+    aria-label="Hubungi Legacy English Space melalui WhatsApp"
+  >
+    ☎
+  </a>
+
+  <script>
+    // Menu mobile
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+      });
+    });
+
+    // Animasi ketika elemen masuk viewport
+    const revealElements = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    revealElements.forEach((element) => observer.observe(element));
+
+    // Validasi formulir
+    const form = document.getElementById("registrationForm");
+    const formMessage = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const requiredFields = [
+        document.getElementById("name"),
+        document.getElementById("phone"),
+        document.getElementById("level"),
+        document.getElementById("programSelect")
+      ];
+
+      let isValid = true;
+
+      requiredFields.forEach((field) => {
+        const group = field.closest(".form-group");
+
+        if (!field.value.trim()) {
+          group.classList.add("invalid");
+          isValid = false;
+        } else {
+          group.classList.remove("invalid");
+        }
+      });
+
+      const phone = document.getElementById("phone");
+      const phoneGroup = phone.closest(".form-group");
+      const phonePattern = /^[0-9+\-\s]{9,16}$/;
+
+      if (phone.value.trim() && !phonePattern.test(phone.value.trim())) {
+        phoneGroup.classList.add("invalid");
+        phoneGroup.querySelector(".error").textContent =
+          "Masukkan nomor WhatsApp yang valid.";
+        isValid = false;
+      }
+
+      if (isValid) {
+ 	 const name = document.getElementById("name").value.trim();
+  	 const phone = document.getElementById("phone").value.trim();
+  	 const level = document.getElementById("level").value;
+  	 const program = document.getElementById("programSelect").value;
+         const message = document.getElementById("message").value.trim();
+
+  	 const whatsappNumber = "6287791155447";
+
+  	 const whatsappMessage =
+	`Halo Legacy English Space 👋
+
+	Saya ingin melakukan pendaftaran di LES.
+
+	*FORMULIR PENDAFTARAN*
+
+		Nama Lengkap: ${name}
+		Nomor WhatsApp: ${phone}
+		Primary Level: ${level}
+		Program Pilihan: ${program}
+		Pesan Tambahan: ${message || "-"}
+
+	Mohon informasi lebih lanjut mengenai program dan jadwal belajar. Terima kasih.`;
+
+ 	 const whatsappURL =
+  	  `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  	window.open(whatsappURL, "_blank");
+	}
+
+      if (isValid) {
+        formMessage.style.display = "block";
+        form.reset();
+
+        setTimeout(() => {
+          formMessage.style.display = "none";
+        }, 6000);
+      } else {
+        formMessage.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
