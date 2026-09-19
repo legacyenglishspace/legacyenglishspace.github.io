@@ -4,10 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Legacy English Space — Primary Tutoring</title>
+  <title>Legacy English Space — Primary Preparation & Primary 1-6 Tutoring</title>
   <meta
     name="description"
-    content="Legacy English Space menyediakan tutoring untuk siswa SD/Primary 1 hingga Primary 6 dengan Cambridge dan Singaporean Curriculum-Based Learning."
+    content="Legacy English Space menyediakan tutoring untuk persiapan masuk SD/Primary dan semua jenjang Primary 1 hingga 6 dengan Cambridge dan Singaporean Curriculum-Based Learning."
   />
   <meta
     name="keywords"
@@ -18,8 +18,8 @@
 
     <link rel="canonical" href="https://lespace.web.id/">
 
-    <meta property="og:title" content="Legacy English Space — Primary Tutoring">
-    <meta property="og:description" content="Legacy English Space menyediakan tutoring untuk siswa SD/Primary 1 hingga Primary 6 dengan Cambridge dan Singaporean Curriculum-Based Learning.">
+    <meta property="og:title" content="Legacy English Space — Primary Preparation & Primary 1-6 Tutoring">
+    <meta property="og:description" content="Legacy English Space menyediakan tutoring untuk persiapan masuk SD/Primary dan semua jenjang Primary 1 hingga 6 dengan Cambridge dan Singaporean Curriculum-Based Learning.">
     <meta property="og:url" content="https://lespace.web.id/">
     <meta property="og:type" content="website">
 </head>
@@ -477,7 +477,7 @@
     }
 
     .program-grid,
-    .level-grid,
+    .grade-grid,
     .subject-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -485,7 +485,7 @@
     }
 
     .program-card,
-    .level-card,
+    .grade-card,
     .subject-card,
     .price-card,
     .schedule-card,
@@ -1086,7 +1086,7 @@
         margin: auto;
       }
 
-      .level-grid,
+      .grade-grid,
       .program-grid,
       .subject-grid,
       .price-grid {
@@ -1121,7 +1121,7 @@
         gap: 12px;
       }
 
-      .level-grid,
+      .grade-grid,
       .subject-grid,
       .program-grid,
       .price-grid,
@@ -1146,6 +1146,29 @@
         flex-direction: column;
       }
     }
+
+.grade-card h4 {
+  margin: 8px 0 4px;
+  font-size: 1.15rem;
+  color: var(--text);
+}
+
+.grade-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.grade-card:first-child {
+  background: linear-gradient(135deg, #fff8e7, #ffffff);
+  border-color: rgba(200, 150, 50, 0.25);
+}
+
+.grade-card:first-child h3 {
+  font-size: 2.5rem;
+  margin-bottom: 4px;
+}
+
   </style>
 </head>
 
@@ -1184,14 +1207,14 @@
           <span class="eyebrow">Belajar Lebih Cerdas</span>
           <h1>Wujudkan Prestasi Terbaik Bersama Legacy English Space</h1>
           <p>
-            Primary tutoring offline dan online terpercaya dengan metode interaktif, pengajar
+            Primary preparation dan Primary 1-6 tutoring offline juga online yang terpercaya dengan metode interaktif, pengajar
             berpengalaman, dan program belajar yang dirancang sesuai kebutuhan
             setiap siswa.
           </p>
 
           <div class="hero-buttons">
             <a href="#daftar" class="btn btn-primary">Daftar Sekarang →</a>
-            <a href="#program" class="btn btn-outline">Lihat Program</a>
+            <a href="#harga" class="btn btn-outline">Lihat Program</a>
  	 </div>
   	</div>
        </section>
@@ -1266,14 +1289,21 @@
 <section class="section grade" id="grade">
   <div class="container">
     <div class="section-heading center reveal">
-      <span class="eyebrow">Primary Level</span>
+      <span class="eyebrow">Level belajar</span>
       <h2>Setiap tingkatan punya tantangan belajar</h2>
       <p>
-        Pendampingan belajar yang membantu Anda berkembang di setiap tingkat Primary.
+        Pendampingan belajar yang membantu Anda berkembang dari persiapan masuk SD/Primary hingga semua jenjang Primary.
       </p>
     </div>
 
     <div class="grade-grid">
+
+      <div class="grade-card reveal">
+        <div>
+          <span class="grade-label"> </span>
+          <h3>PRIMARY PREPARATION</h3>
+        </div>
+      </div>
 
       <div class="grade-card reveal">
         <div>
@@ -1419,7 +1449,7 @@
             <p>Belajar dalam kelompok kecil.</p>
             <div class="price">Hubungi kami</div>
             <ul class="price-features">
-              <li>3 Siswa 1 Tutor</li>
+              <li>3-4 Siswa 1 Tutor</li>
 	      <li>Aktivitas belajar interaktif dan kolaboratif</li>
               <li>Diskusi dan latihan bersama</li>
               <li>Materi sesuai level dan kebutuhan kelompok</li>
@@ -1513,9 +1543,10 @@
               </div>
 
               <div class="form-group">
-                <label for="level">Primary Level</label>
+                <label for="level">Level belajar</label>
                 <select id="level" name="level">
-                  <option value="">Pilih tingkat Primary</option>
+                  <option value="">Pilih level belajar</option>
+                  <option>Primary Preparation - Persiapan Masuk SD</option>
                   <option>Primary 1</option>
                   <option>Primary 2</option>
                   <option>Primary 3</option>
@@ -1678,7 +1709,7 @@
 
 		Nama Lengkap: ${name}
 		Nomor WhatsApp: ${phone}
-		Primary Level: ${level}
+		Level Belajar: ${level}
 		Program Pilihan: ${program}
 		Pesan Tambahan: ${message || "-"}
 
